@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .main-container {
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0;
+        }
+
+        .title {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-left: 15%;
+        }
+
+        h1 {
+            font-size: 6rem;
+        }
+
+        #logo {
+            border-radius: 20px;
+        }
+
+        span {
+            font-family: cursive;
+            font-style: italic;
+            color: #125B9A;
+        }
+
+        .photo1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            margin-top: 10%;
+        }
+
+        .text-holder {
+            float: right;
+            width: 50%;
+            font-size: 1.5rem;
+        }
+
+        .photo2 {
+            display: flex;
+            justify-content: end;
+            align-items: start;
+            padding-top: 10px;
+            margin-right: 23%;
+            transform: rotate(4deg);
+            transition: transform 0.5s;
+        }
+
+        @media (max-width: 900px) {
+            .main-container {
+                display: flex;
+                flex-direction: column;
+            }
+
+            .items {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .title {
+                margin-left: 0;
+                margin-top: 35px;
+            }
+
+            #hand-portrait {
+                height: 250px;
+                margin-bottom: 30px;
+            }
+
+            h1 {
+                font-size: 4rem;
+                text-align: center;
+            }
+
+            .text {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: justify;
+            }
+
+            .text-holder {
+                font-size: large;
+                width: fit-content;
+                padding: 18px;
+            }
+
+            .photo2 {
+                margin-right: 0;
+                margin-top: 30px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <section id="navbar">
+        <header class="p-3 text-bg-dark">
+            <div class="container">
+              <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none text-bg-dark">
+                  <img src="../Assets/Thumbnail.png" alt="laptop-icon" height="30" id="logo">
+                </a>
+        
+                <ul class="nav nav-underline col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                  <li><a href="../index.html" class="nav-link px-2 text-secondary">Home</a></li>
+                  <li><a href="../Public/skills.html" class="nav-link px-2 text-white">Skills</a></li>
+                  <li><a href="../Public/contactme.html" class="nav-link px-2 text-white">Contact me</a></li>
+                  <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+                </ul>
+                
+                <ul class="nav text-end">
+                    <li><a href="https://www.facebook.com/profile.php?id=100008974506824&mibextid=LQQJ4d" class="nav-item px-3"><i class="fa fa-facebook-square" style="font-size:36px;color:white"></i></a></li>
+                    <li><a href="https://x.com/angelalmenarez" class="nav-item px-3"><i class="fa fa-twitter" style="font-size:36px;color:white"></i></a></li>
+                    <li><a href="https://www.instagram.com/angel_almenarezjr?igsh=ZXp0Ym0wZG1xdW8%3D&utm_source=qr" class="nav-item px-3"><i class="fa fa-instagram" style="font-size:36px;color:white"></i></a></li>
+                </ul>
+        
+              </div>
+            </div>
+          </header>
+    </section>
+
+    <section id="About me">
+        <div class="main-container">
+            <div class="title items">
+                <h1>A little bit <br>
+                    about <span>Me</span> </h1>
+            </div>
+            <div class="photo1 items">
+                <img src="../Assets/pexels-cottonbro-5053843.jpg" alt="hand-portrait" height="280" id="hand-portrait">
+            </div>
+            <div class="text items">
+                <div class="text-holder">
+                <p>I am a Junior Software Developer with a solid programming foundation and expertise in relevant technologies. A recent college graduate, I enhanced my skills through an intensive software development boot camp. I am bilingual, adept at problem-solving, experienced in customer service, and a quick learner, able to adapt effectively to collaborative environments.</p>
+                </div>
+            </div>
+            <div class="photo2 items">
+                <img src="../Assets/About me photo.png" alt="self-portrait" height="320" id="self-portrait">  
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

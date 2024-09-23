@@ -1,0 +1,30 @@
+h1 {
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+.portfolio {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;
+}
+
+.projects {
+    border-radius: 10px;
+    transition: transform 0.3s;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#logo {
+  border-radius: 20px;
+}
+
+.projects:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4)
+  }
+  
+  @media (max-width: 800px) {
+    .pictures {
+        height: 150;
+        width: 150;
+    }
+  }
